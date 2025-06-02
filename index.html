@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ramakhupane Software Development</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #222;
+      background-color: #f9f9f9;
+    }
+    header {
+      background-color: #1e1e2f;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 1.5rem;
+    }
+    .hero {
+      background: linear-gradient(to right, #3f51b5, #5a55ae);
+      color: white;
+      padding: 5rem 2rem;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+    .btn {
+      background-color: #ff9800;
+      color: white;
+      padding: 0.8rem 1.5rem;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    .section {
+      padding: 3rem 2rem;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .section h2 {
+      color: #333;
+      margin-bottom: 1rem;
+    }
+    .services, .why-us {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+    .card {
+      background-color: white;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .testimonial {
+      font-style: italic;
+      background-color: #fff3e0;
+      padding: 1.5rem;
+      border-left: 4px solid #ff9800;
+      margin: 2rem 0;
+    }
+    footer {
+      background-color: #1e1e2f;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    footer a {
+      color: #ffcc80;
+      margin: 0 0.5rem;
+      text-decoration: none;
+    }
+
+      .slide-out {
+      transform: translateX(-100%);
+    }
+
+    button {
+      padding: 1rem 2rem;
+      font-size: 1.1rem;
+      background-color: #3f51b5;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #303f9f;
+    }
+  </style>
+</head>
+<body>
+
+  
+  <header>
+    <h1>Ramakhupane</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Portfolio</a>
+      <a href="#">Blog</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+
+
+  <section class="hero">
+    <h1>Building Smart, Scalable Software Solutions for Tomorrow</h1>
+    <p>We craft user-focused apps that help your business grow and lead in a digital world.</p>
+    <button class="btn">Request a Free Consultation</button>
+  </section>
+
+
+
+  <section class="section">
+
+    <h2>Our Core Services</h2>
+    
+    <div class="services">
+
+      <div class="card">
+        <h3>Web & Mobile Development</h3>
+        <p>Custom-built solutions tailored to your business needs.</p>
+      </div>
+
+      <div class="card">
+        <h3>Software Consulting</h3>
+        <p>Expert advice on scalable systems and software strategies.</p>
+      </div>
+
+      <div class="card">
+        <h3>Systems Integration</h3>
+        <p>We connect your platforms and tools for seamless operation.</p>
+      </div>
+
+      <div class="card">
+        <h3>UI/UX Design</h3>
+        <p>Clean, modern interfaces that improve user satisfaction.</p>
+      </div>
+      
+    </div>
+  </section>
+
+  
+  <section class="section">
+
+    <h2>Why Choose Ramakhupane?</h2>
+
+    <div class="why-us">
+
+      <div class="card">✅ Experienced, results-driven developers</div>
+      <div class="card">✅ Transparent communication & process</div>
+      <div class="card">✅ Secure, scalable, fast solutions</div>
+      <div class="card">✅ On-time delivery - guaranteed</div>
+
+    </div>
+
+  </section>
+
+
+  
+  <section class="section">
+
+    <div class="testimonial">
+
+      "Ramakhupane turned our idea into a working product faster than we imagined. 
+      Their team was professional, responsive, and results-driven."
+      <br>
+      
+      <br>- Satisfied Client
+    </div>
+
+  </section>
+
+  
+  <section class="section" style="text-align:center;">
+
+    <h2>Let's Build Something Great</h2>
+    <p>📞 Call us: +266 62018249 &nbsp; | &nbsp; 📧 Sekhenene07@gmail.com</p>
+
+    <button class="btn">Contact Us Now</button>
+
+  </section>
+
+          <div id="home" class="page">
+    <div>
+      <button onclick="slideToPage()">ABOUT US</button>
+    </div>
+  </div>
+
+  <script>
+    function slideToPage() {
+      const home = document.getElementById('home');
+      home.classList.add('slide-out');
+      setTimeout(() => {
+        window.location.href = "about.html"; 
+      }, 1000); 
+    }
+  </script>
+  
+  <footer>
+
+    © 2025 Ramakhupane Software Development <br />
+
+    <a href="#">Terms</a> | 
+    <a href="#">Privacy</a> | 
+    <a href="#">LinkedIn</a> | 
+    <a href="#">GitHub</a> | 
+    <a href="#">Facebook</a>
+
+  </footer>
+
+</body>
+</html>
